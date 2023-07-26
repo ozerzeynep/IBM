@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,600;0,700;1,400&family=Raleway:wght@200;300;400&family=Recursive:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 1s ease;
+}
+body{
+    background-color: #C3EDC0;
+    height: 200vh;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+header .logo img{
+    height: 10rem;
+    border-radius: 20%;
+    margin-top: 1rem;
+}
+header{
+    background-color: white;
+    opacity: 0.7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    margin: 2rem 10%;
+    position: sticky;
+    z-index: 1000;
+    border-radius: 35rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 24px 58px, rgba(0, 0, 0, 0.22) 0px 30px 50px;
+}
+header .navbar a{
+    margin: 0 1rem;
+    font-size: 2.3rem;
+    color: #9ec69b;
+    border-bottom: 0.3rem solid transparent;
+}
+.navbar .active,
+.navbar a:hover{
+    border-color: #8db58b;
+    padding-bottom: 0.5rem;
+}
+.home{
+    min-height: 100vh;
+    background: url(/projeler/geriDönüşümmmmm.jpg) no-repeat;
+    background-size: cover;
+    margin-top: -15.5rem;
+}
+.home .filter{
+    min-height: 100vh;
+    min-width: 100vh;
+    float: left;
+    background-color: #C3EDC0;
+    opacity: 0.7;
+}
+.home .filter h3{
+    text-align: center;
+    margin-top: 50%;
+    font-size: 37px;
+    color: #679565;
+}
+.doga .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    position: relative;
+    margin-top: 750px;
+}
+.doga .box-container .box{
+    padding: 3rem;
+    background-color: #9beb71;
+    border-radius: 3rem;
+    min-height: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0 20px;
+    transition: 1s;
+}
+.doga .box-container .box:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.doga .box-container .box img{
+    width: 100%;
+    object-fit: cover;
+}
+.doga h1{
+    margin-top: 25px;
+    font-size: 40px;
+    margin-left: 20px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.box .box-head img{
+    border-radius: 25px;
+}
+.box .box-head h4{
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    margin-top: 15px;
+}
+.box .box-head p{
+    margin-top: 15px;
+    font-size: 21px;
+    color: #fff;
+}
+
+
+
+footer{
+    margin-top: 900px;
+    background: linear-gradient(to right, #6de164 10%, #9ef072 90%);
+    height: 250px;
+    width: 100vw;
+    padding-top: 40px;
+    border-top-left-radius: 135px;
+    border-top-right-radius: 135px;
+}
+.footerr h2{
+    margin-top: -20px;
+    font-size: 37px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+    color: #2c562b;
+}
+.footerr p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 20px;
+    color: #2c562b;
+}
+.footerr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: -140px;
+}
+.social{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.social li{
+    margin: 0 10px;
+}
+.social a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+}
+.social a:hover{
+    color: #679565;
+}
+footer img{
+    width: 150px;
+    margin-left: 100px;
+    position: relative;
+    animation: rotateAnimation 4s linear infinite;
+}
+@keyframes rotateAnimation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  
+
+
+
+
+
+
+
+
