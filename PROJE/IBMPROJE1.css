@@ -67,6 +67,23 @@ header .navbar a{
     font-size: 37px;
     color: #679565;
 }
+.container .boxx video{
+    width: 800px;
+    height: 500px;
+    margin-top: 75px;
+    float: right;
+    margin-right: 30px;
+    border-radius: 10px;
+}
+.container .boxx h1{
+    text-align: center;
+    justify-content: center;
+    color: #679565;
+    margin-top: 250px;
+    margin-left: 20px;
+    display: inline-block;
+    font-size: 23px;
+}
 .doga .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
