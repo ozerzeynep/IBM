@@ -132,7 +132,44 @@ header .navbar a{
     font-size: 21px;
     color: #fff;
 }
-
+.cerceve{
+    width: 60%;
+    margin: auto;
+    margin-top: 10%;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 3px solid #2c562b;
+}
+.galeri{
+    position: relative;
+    width: 400%;
+    left:0%;
+    animation: 12s slayt infinite;
+}
+.galeri img{
+    width: 25%;
+    float: left;
+}
+@keyframes slayt{
+    0%{
+        left: 0%;
+    }
+    20%{
+        left: 0%;
+    }
+    25%{
+        left: -100%;
+    }
+    45%{
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left: -200%;
+    }
+}
 
 
 footer{
