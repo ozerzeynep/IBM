@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geri Dönüşüm</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="IBMPROJE1.css">
+
+    <script>
+        function changeLanguage(lang) {
+            const elements = document.querySelectorAll('[data-lang]');
+            elements.forEach(element => {
+                element.textContent = translations[lang][element.dataset.lang];
+            });
+        }
+
+        const translations = {
+            "tr": {
+                "home": "Anasayfa",
+                "profile": "Profil",
+                "info_box": "Bilgi Kutusu",
+                "map": "Harita",
+                "ai": "Yapay Zeka",
+                "gift_nature": "Atığını Dönüştür Doğaya Armağan Et",
+                "plastic": "Plastik Atıkları",
+                "plastic_desc": "\"Plastik atıklar, doğada parçalanma süresi en uzun olan atık türlerinden biridir. Bir plastik şişenin tamamen doğada çözünmesi, yaklaşık 500 yıl sürebilir!\"",
+                "glass": "Cam Atıkları",
+                "glass_desc": "\"Cam, geri dönüştürüldüğünde yüksek oranda enerji tasarrufu sağlar. Sadece 1 cam şişenin geri dönüşümü, enerji tasarrufu açısından bir ampulün tam 4 saat yanmasına eşdeğerdir!\"",
+                "organic": "Organik Atıklar",
+                "organic_desc": "\"Bir adet elma kabuğu, doğada tam olarak çözünene kadar yaklaşık 2 ay kadar sürebilir. Ancak, bu organik atığı kompost yaparak sadece birkaç haftada değerli bir doğal gübre haline dönüştürebilirsiniz!\"",
+                "paper": "Kağıt ve Karton Atıkları",
+                "paper_desc": "\"Sadece 1 ton geri dönüştürülmüş kağıt ve kartonun kullanılması, yaklaşık 17 ağacın kesilmesini engeller. Ayrıca, enerji tasarrufu açısından ortalama bir evin 6 aylık elektrik tüketimine denk gelir!\""
+            },
+            "en": {
+                "home": "Home",
+                "profile": "Profile",
+                "info_box": "Info Box",
+                "map": "Map",
+                "ai": "Artificial Intelligence",
+                "gift_nature": "Give Your Waste to Nature as a Gift",
+                "plastic": "Plastic Waste",
+                "plastic_desc": "\"Plastic waste is one of the waste types with the longest decomposition time in nature. It can take about 500 years for a plastic bottle to completely dissolve in nature!\"",
+                "glass": "Glass Waste",
+                "glass_desc": "\"Glass provides a high level of energy saving when recycled. Recycling just 1 glass bottle is equivalent to a light bulb burning for a full 4 hours in terms of energy savings!\"",
+                "organic": "Organic Waste",
+                "organic_desc": "\"An apple peel can take about 2 months to fully decompose in nature. However, you can turn this organic waste into valuable natural fertilizer in just a few weeks by composting it!\"",
+                "paper": "Paper and Cardboard Waste",
+                "paper_desc": "\"Using just 1 ton of recycled paper and cardboard prevents the cutting of approximately 17 trees. Additionally, it is equivalent to the 6-month electricity consumption of an average household in terms of energy savings!\""
+            },
+            "de": {
+                "home": "Startseite",
+                "profile": "Profil",
+                "info_box": "Infokasten",
+                "map": "Karte",
+                "ai": "Künstliche Intelligenz",
+                "gift_nature": "Geben Sie Ihre Abfälle als Geschenk an die Natur",
+                "plastic": "Plastikabfälle",
+                "plastic_desc": "\"Plastikabfälle gehören zu den Abfallarten mit der längsten Zersetzungszeit in der Natur. Es kann etwa 500 Jahre dauern, bis sich eine Plastikflasche vollständig in der Natur auflöst!\"",
+                "glass": "Glasabfälle",
+                "glass_desc": "\"Glasabfälle sorgen beim Recycling für eine hohe Energieeinsparung. Das Recycling einer einzigen Glasflasche entspricht einer Leuchtdauer einer Glühbirne von vollen 4 Stunden in Bezug auf Energieeinsparung!\"",
+                "organic": "Bioabfälle",
+                "organic_desc": "\"Eine Apfelschale kann etwa 2 Monate dauern, bis sie sich vollständig in der Natur zersetzt. Sie können jedoch diese Bioabfälle durch Kompostierung in nur wenigen Wochen in wertvollen natürlichen Dünger umwandeln!\"",
+                "paper": "Papier- und Kartonabfälle",
+                "paper_desc": "\"Die Verwendung von nur 1 Tonne recyceltem Papier und Karton verhindert das Fällen von etwa 17 Bäumen. Außerdem entspricht es in Bezug auf Energieeinsparung dem 6-monatigen Stromverbrauch eines durchschnittlichen Haushalts!\""
+            }
+        };
+    </script>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><img src="/projeler/ekoLoop1.png" alt="logo"></a>
+        <nav class="navbar">
+            <a href="/projeler/IBMPROJE1.html" class="active" data-lang="home">Anasayfa</a>
+            <a href="#" data-lang="profile">Profil</a>
+            <a href="#" data-lang="info_box">Bilgi Kutusu</a>
+            <a href="#" data-lang="map">Harita</a>
+            <a href="#" data-lang="ai">Yapay Zeka</a>
+        </nav>
+        <div>
+            <button onclick="changeLanguage('tr')">Türkçe</button>
+            <button onclick="changeLanguage('en')">English</button>
+            <button onclick="changeLanguage('de')">Deutsch</button>
+        </div>
+    </header>
+    <div class="people">
+        <img src="/projeler/unknownnn.png" alt="">
+        <h1 data-lang="gift_nature">Atığını Dönüştür Doğaya Armağan Et</h1>
+    </div>
+    <section class="doga">
+        <div class="box-container">
+            <div class="box">
+                <div class="box-head">
+                    <img src="/projeler/plastic.jpg" alt="">
+                    <h4 data-lang="plastic">Plastik Atıkları</h4>
+                    <p data-lang="plastic_desc">"Plastik atıklar, doğada parçalanma süresi en uzun olan atık türlerinden biridir. Bir plastik şişenin tamamen doğada çözünmesi, yaklaşık 500 yıl sürebilir!"</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-head">
+                    <img src="/projeler/cam_atıkları.jpg" alt="">
+                    <h4 data-lang="glass">Cam Atıkları</h4>
+                    <p data-lang="glass_desc">"Cam, geri dönüştürüldüğünde yüksek oranda enerji tasarrufu sağlar. Sadece 1 cam şişenin geri dönüşümü, enerji tasarrufu açısından bir ampulün tam 4 saat yanmasına eşdeğerdir!"</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-head">
+                    <img src="/projeler/organik_atıklar.jpg" alt="">
+                    <h4 data-lang="organic">Organik Atıklar</h4>
+                    <p data-lang="organic_desc">"Bir adet elma kabuğu, doğada tam olarak çözünene kadar yaklaşık 2 ay kadar sürebilir. Ancak, bu organik atığı kompost yaparak sadece birkaç haftada değerli bir doğal gübre haline dönüştürebilirsiniz!"</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-head">
+                    <img src="/projeler/kagıt_atıkları.jpg" alt="">
+                    <h4 data-lang="paper">Kağıt ve Karton Atıkları</h4>
+                    <p data-lang="paper_desc">"Sadece 1 ton geri dönüştürülmüş kağıt ve kartonun kullanılması, yaklaşık 17 ağacın kesilmesini engeller. Ayrıca, enerji tasarrufu açısından ortalama bir evin 6 aylık elektrik tüketimine denk gelir!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atık Sayaç</title>
+</head>
+<body>
+    <h1>Dünya Çapında Toplam Atık Sayısı: <span id="wasteCount">0</span></h1>
+
+    <script>
+        // Rastgele atık sayısı oluşturucu
+        function generateRandomWasteCount() {
+            return Math.floor(Math.random() * 1000000); // 0 ile 1.000.000 arasında rastgele bir sayı
+        }
+
+        // Sayaç güncelleme işlevi
+        function updateWasteCount() {
+            const wasteCountElement = document.getElementById('wasteCount');
+            const randomWasteCount = generateRandomWasteCount();
+            wasteCountElement.textContent = randomWasteCount;
+        }
+
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            updateWasteCount();
+            setInterval(updateWasteCount, 5000); // 5 saniyede bir güncelleme
+        });
+    </script>
+</body>
+</html>
