@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information Box</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="box.css">
+</head>
+<body>
+    <section class="header">
+        <a href="#" class="logo">EkoLoop</a>
+    </section>
+    <section class="home-section">
+        <div class="text-content">
+            <h5>Summary Information About Recycling</h5>
+            <h2>Green Transformation Movement</h2>
+            <p>The recycling information box helps you learn how to efficiently recycle your waste and increases your chances <br> of showing your responsibility to nature and the future. <br> By taking this step, you can support big environmental transformations with a small contribution!</p>
+        </div>
+        <div class="image">
+            <img src="recycle.png" alt="">
+            <div class="shadow">
+                
+            </div>
+        </div>
+    </section>
+    <div class="cards">
+        <div class="card card-1">
+            <div class="container">
+                <img src="plastic_waste.jpg" alt="">
+            </div>
+            <div class="details">
+                <h3>Plastic Waste</h3>
+                <p>In Japan, the company Blest has developed a device that converts plastic waste into usable fuel for households. This innovation offers a solution to the problem of plastic waste, helping to reduce the use of fossil fuels.</p>
+            </div>
+        </div>
+        <div class="card card-2">
+            <div class="container">
+                <img src="Glass Waste.jpg" alt="">
+            </div>
+            <div class="details">
+                <h3>Glass Waste</h3>
+                <p>Some countries have developed special methods for recycling glass waste. For example, in Sweden, glass waste is melted to generate heat energy, which is used to heat cities or generate electricity. This method not only ensures the disposal of glass waste but also contributes to the production of renewable energy.</p>
+            </div>
+        </div>
+        <div class="card card-3">
+            <div class="container">
+                <img src="Organic Waste.jpg" alt="">
+            </div>
+            <div class="details">
+                <h3>Organic Waste</h3>
+                <p>The organic wastes obtained are converted into methane gas (biogas) by bacteria through anaerobic fermentation process, turning it into an energy source containing 50% to 75% methane. While this method prevents organic waste from harming the environment, it contributes to the reduction of fossil fuel use and the prevention of approximately 20 million tons of CO2 emissions by producing approximately 2 billion cubic meters of biogas per year.</p>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+
+
+
+    
+    
+
+
+    
+    
+</body>
+</html>
