@@ -100,7 +100,7 @@ img{
     padding: .7rem .1rem;
     border: none;
     border-radius: 10px;
-}
+} 
 .btn-main {
     background: #a1e79c;
     
@@ -172,7 +172,7 @@ img{
 }
 .payment-card:hover{
     transform: translateY(-5px);
-}
+} 
 .card-header{
     display: flex;
     justify-content: space-between;
@@ -261,7 +261,7 @@ img{
 label{
     font-size: 25px;
     color: #a1e79c;
-    margin-left: 30px;
+    margin-left: 120px;
 }
 button{
     background-color: transparent;
@@ -270,4 +270,36 @@ button{
     border: 1px solid #a1e79c;
     cursor: pointer;
     font-size: 17px;
+}
+.card-new{
+    background: rgb(235,254,235);
+    border-radius: 10px;
+    width: 270px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 0 10px rgba(0,0,0,.4);
+    margin-top: -470px;
+}
+.card-new:hover{
+    transform: translateY(-5px);
+}
+.card-new .btn{
+    margin-top: 9px;
+}
+.card-new-two .btn{
+    margin-top: 159px;
+}
+.card-new h3{
+    text-align: center;
+    font-size: 18px;
+    color: #11a8c3;
+    margin-top: 20px;
+}
+#picture-two{
+    width: 450px;
+    margin-left: 300px;
+    margin-top: -210px;
 }
