@@ -141,7 +141,7 @@
         <div class="content-two">
             <div class="content-three">
                 <div class="titlee">
-                    <h2>Change Username</h2>
+                    <h2>Change Username(you can change it if you want)</h2>
                 </div>
 
                 <form id="usernameForm">
@@ -151,6 +151,11 @@
                 </form>
             </div>
         </div>
+        <div class="card-new">
+            <h3>You can tag us by sharing the levels you have progressed on instagram. We are sure you will enjoy it, come on you start. </h3>
+            <button class="btn btn-main"><a href="https://www.instagram.com/accounts/login/" target="_blank">Login to Instagram</a></button>
+        </div>
+        <img src="sustainability.png" alt="" id="picture-two">
     </div>
 
     
