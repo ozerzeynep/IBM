@@ -1,0 +1,9 @@
+ Morris.Donut({
+    element: 'donut-example',
+    data: [
+      {label: "Number of shares on the blog", value: 12},
+      {label: "Total sales quantity", value: 30},
+      {label: "Today's level progress", value: 20}
+    ],
+    colors:['#f25656', '#f6d433', '#22baa0'],
+  });
