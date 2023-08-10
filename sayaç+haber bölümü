@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geri Dönüşüm</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="IBMPROJE1.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><img src="/projeler/ekoLoop1.png" alt="logo"></a>
+        <nav class="navbar">
+            <a href="/projeler/IBMPROJE1.html" class="active">Homepage</a>
+            <a href="#">Profile</a>
+            <a href="#">Information Box</a>
+            <a href="#">Sales</a>
+            <a href="#">Map</a>
+            <a href="#">Artificial Intelligence</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="filter">
+            <h3>Recycle your waste, give a gift to nature. <br> Take a step today to protect the future!</h3>
+        </div>
+    </section>
+    <div class="container">
+        <div class="boxx">
+            <video src="video.mp4" autoplay muted loop></video>
+            <h1>Protecting our planet is in our hands! <br> Recycle, protect natural resources and stop pollution. <br> Small steps lead to big changes. <br> Start today and leave a livable world for future generations. <br> Don't forget, every bit of recycling helps our planet breathe!</h1>
+        </div>
+    </div>
+    <section class="doga">
+        <div class="box-container">
+            <div class="box">
+                <div class="box-head">
+                    <img src="/projeler/plastic.jpg" alt="">
+                    <h4>Plastic Waste</h4>
+                    <p>"Plastic waste is one of the types of waste that takes the longest to break down in nature. It can take about 500 years for a plastic bottle to completely biodegrade!"</p>
+                </div>
+                
+            </div>
+            <div class="box">
+                <div class="box-head">
+                    <img src="/projeler/cam_atıkları.jpg" alt="">
+                    <h4>Glass Waste</h4>
+                    <p>"Glass saves a lot of energy when recycled. Recycling just 1 glass bottle is equivalent to lighting a light bulb for 4 hours in terms of energy savings!"</p>
+                </div>
+                
+            </div>
+            <div class="box">
+                <div class="box-head">
+                    <img src="/projeler/organik_atıklar.jpg" alt="">
+                    <h4>Organic Waste</h4>
+                    <p>"One apple peel can take up to 2 months to fully decompose in nature. However, by composting this organic waste, you can turn it into a valuable natural fertilizer in just a few weeks!"</p>
+                </div>
+                
+            </div>
+            <div class="box">
+                <div class="box-head">
+                    <img src="/projeler/kagıt_atıkları.jpg" alt="">
+                    <h4>Paper and Cardboard Waste</h4>
+                    <p>"Using just 1 ton of recycled paper and cardboard prevents the felling of about 17 trees. In addition, in terms of energy savings, it is equivalent to 6 months of electricity consumption of an average house!"</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <div class="cerceve">
+        <div class="galeri">
+            <img src="bir.jpg" alt="">
+            <img src="iki.jpg" alt="">
+            <img src="üç.png" alt="">
+        </div>
+        
+    </div>
+    <div class="annual-recycling">
+        <h2>Annual Recycling Number</h2>
+        <div id="counter">0</div> <!-- sayacın yeri -->
+    </div>
+    <section class="recycle-news">
+        <h2>Recycle News</h2>
+        <div class="news-container">
+            <div class="news-item">
+                <img src="haber1.jpg" alt="Recycle News 1">
+                <h3>Plastic Waste Reduction Campaign</h3>
+                <p>A new campaign is launched to raise awareness about reducing plastic waste. Join us in making a difference!</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            <div class="news-item">
+                <img src="haber2.jpg" alt="Recycle News 2">
+                <h3>Glass Recycling Innovation</h3>
+                <p>Discover the latest glass recycling innovation that's making a positive impact on our environment.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            <div class="news-item">
+                <img src="haber3.jpg" alt="Recycle News 3">
+                <h3>Composting Workshop</h3>
+                <p>Learn the art of composting at our upcoming workshop and turn your organic waste into valuable fertilizer.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            
+            <div class="news-item">
+                <img src="haber4.jpg" alt="Recycle News 4">
+                <h3>Paper Recycling Success Story</h3>
+                <p>Read about how a local community's paper recycling efforts are making a significant impact on waste reduction.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            <div class="news-item">
+                <img src="haber5.jpg" alt="Recycle News 3">
+                <h3>Composting Workshop</h3>
+                <p>Learn the art of composting at our upcoming workshop and turn your organic waste into valuable fertilizer.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            <div class="news-item">
+                <img src="haber6.jpg" alt="Recycle News 3">
+                <h3>Composting Workshop</h3>
+                <p>Learn the art of composting at our upcoming workshop and turn your organic waste into valuable fertilizer.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <img src="/projeler/recycling-1341372_1280.png" alt="" class="recycling">
+        <div class="footerr">
+            <h2>Ecological Waste Cycle</h2>
+            <p>As a gift to ourselves and future generations, let us <br>discover our power to create a sustainable world by recycling our waste.</p>
+            <ul class="social">
+                <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
+                <li><a href="https://instagram.com/ekoloop23?igshid=MmU2YjMzNjRlOQ==" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100095019383090" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        const counterElement = document.getElementById('counter');
+        let count = 0;
+        const targetCount = 104800000; // 104.8 milyon
+
+        function updateCounter() {
+            counterElement.textContent = count.toLocaleString();
+            count += 1000000; // artış hızı
+
+            if (count <= targetCount) {
+                setTimeout(updateCounter, 100); // Her 0.1 saniyede sayaç ilerleyecek
+            }
+        }
+
+        updateCounter(); // Sayacı başlat.
+    </script>
+</body>
+</html>
