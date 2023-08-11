@@ -1,0 +1,50 @@
+  /* Yazı büyütme ve ortalama */
+body {
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 50px;
+}
+
+/* Haber bölümleri */
+.recycle-news {
+    padding: 50px 0;
+    background-color: #9beb71;
+}
+
+.news-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.news-item {
+    flex-basis: calc(25% - 50px);
+    margin: 50px;
+    padding: 50px;
+    border: 1px solid #ccc;
+    text-align: left;
+    background-color: #fff;
+}
+
+.news-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.recycle-news {
+    margin-top: 100px;
+}
+.annual-recycling {
+    position: relative;
+    background-color: #9beb71;
+    padding: 30px;
+    text-align: center; /* Sayacı merkeze almak için */
+}
+#counter {
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 10px; /* Sayacın üst boşluğunu ayarlama eri */
+}
