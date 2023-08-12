@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    .trash-can {
+      position: absolute;
+      bottom: 0;
+      background-color: #ccc;
+      width: 100px;
+      height: 150px;
+    }
+    .info-modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      justify-content: center;
+      align-items: center;
+    }
+    .info-content {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="game-area">
+    <div id="trash-can" class="trash-can"></div>
+  </div>
+  <div id="score">Skor: 0</div>
+  <div class="info-modal" id="infoModal">
+    <div class="info-content">
+      <h2 id="infoHeader">Atık Hakkında Bilgi</h2>
+      <p id="infoText">Bilgi burada görüntülenecek.</p>
+      <button id="closeButton">Kapat</button>
+      <button id="restartButton">Yeniden Başlat</button>
+    </div>
+  </div>
+  <script>
+   const trashInfo = {//atıkların bilgileri
+      paper: {
+        title: "Kağıt Atığı",
+        content: "Kağıt atığı doğada kolayca çözünebilir.",
+      },
+      plastic: {
+        title: "Plastik Atığı",
+        content: "Plastik atığı doğada parçalanması çok uzun sürer.",
+      },
+      glass: {
+        title: "Cam Atığı",
+        content: "Cam atığı yeniden geri dönüştürülebilir.",
+      },
+      metal: {
+        title: "Metal Atığı",
+        content: "Metal atığı tekrar kullanılabilecek şekilde geri dönüştürülebilir.",
+      },
+    };
+    const gameArea = document.querySelector('.game-area');
+    const scoreDisplay = document.getElementById('score');
+    const trashItems = ['paper', 'plastic', 'glass', 'metal'];
+
+    let currentTrashIndex = 0;
+    let trashCanPosition = gameArea.offsetWidth / 2;
+    let score = 0;
+    let gameOver = false;
+
+    trashItems.forEach(trashType => {
+      const trashDiv = document.createElement('div');
+      trashDiv.classList.add('trash');
+      trashDiv.setAttribute('data-type', trashType);
+      trashDiv.style.left = `${Math.random() * (gameArea.offsetWidth - 50)}px`;
+      trashDiv.style.top = '-50px';
+
+      const trashImage = new Image();
+      trashImage.src = `${trashType}.png`;
+      trashImage.alt = trashType;
+      trashDiv.appendChild(trashImage);
+
+      gameArea.appendChild(trashDiv);
+    });
+
+    const trashCan = document.getElementById('trash-can');
+    const infoModal = document.getElementById('infoModal');
+    const infoHeader = document.getElementById('infoHeader');
+    const infoText = document.getElementById('infoText');
+    const closeButton = document.getElementById('closeButton');
+    const restartButton = document.getElementById('restartButton');
+
+    document.addEventListener('keydown', event => {   //yönlendirme tuşları
+      if (!gameOver) {
+        if (event.key === 'ArrowLeft') {
+          trashCanPosition -= 10;
+        } else if (event.key === 'ArrowRight') {
+          trashCanPosition += 10;
+        }
+        trashCan.style.left = `${Math.max(0, Math.min(trashCanPosition, gameArea.offsetWidth - trashCan.offsetWidth))}px`;
+      }
+    });
+
+    function updateTrashItems() {
+      if (!gameOver) {
+        const currentTrash = document.querySelector(`[data-type="${trashItems[currentTrashIndex]}"]`);
+        if (currentTrash) {
+          const currentTop = parseFloat(currentTrash.style.top);
+          if (currentTop >= gameArea.offsetHeight - 50) {
+            currentTrash.style.top = '-50px';
+            currentTrash.style.left = `${getRandomPosition(currentTrash)}px`;
+            currentTrashIndex = (currentTrashIndex + 1) % trashItems.length;
+          } else {
+            currentTrash.style.top = `${currentTop + 2}px`;
+
+            if (isTrashCaught(currentTrash)) {
+              score++;
+              scoreDisplay.textContent = `Skor: ${score}`;
+              currentTrash.style.top = '-50px';
+              currentTrash.style.left = `${getRandomPosition(currentTrash)}px`;
+              currentTrashIndex = (currentTrashIndex + 1) % trashItems.length;
+            }
+          }
+        }
+
+        if (currentTrash && parseFloat(currentTrash.style.top) >= gameArea.offsetHeight - 50 && !gameOver) {
+          gameOver = true;
+          const fallenTrashType = currentTrash.dataset.type;
+          openInfoModal(fallenTrashType);
+        }
+
+        requestAnimationFrame(updateTrashItems);
+      }
+    }
+
+    function isTrashCaught(trash) {
+      const trashRect = trash.getBoundingClientRect();
+      const trashCanRect = trashCan.getBoundingClientRect();
+
+      const isInsideTop = trashRect.top >= trashCanRect.top && trashRect.top <= trashCanRect.bottom;
+      const isInsideBottom = trashRect.bottom >= trashCanRect.top && trashRect.bottom <= trashCanRect.bottom;
+      const isInsideLeft = trashRect.left >= trashCanRect.left && trashRect.left <= trashCanRect.right;
+      const isInsideRight = trashRect.right >= trashCanRect.left && trashRect.right <= trashCanRect.right;
+
+      return (isInsideTop || isInsideBottom) && (isInsideLeft || isInsideRight);
+    }
+
+    function getRandomPosition(trash) {
+      const trashWidth = parseFloat(getComputedStyle(trash).width);
+      return Math.random() * (gameArea.offsetWidth - trashWidth);
+    }
+
+    function openInfoModal(trashType) {
+      infoHeader.textContent = `${trashType.toUpperCase()} Atığı`;
+      infoText.textContent = `Bu atık türü hakkında bilgi burada görüntülenecek.`; // Atıkların bilgi ekranı
+      infoModal.style.display = 'flex';
+    }
+
+    closeButton.addEventListener('click', () => {
+      infoModal.style.display = 'none';
+      gameOver = false;
+    });
+
+    restartButton.addEventListener('click', () => {
+      gameOver = false;
+      score = 0;
+      scoreDisplay.textContent = 'Skor: 0';
+      currentTrashIndex = 0;
+      infoModal.style.display = 'none';
+
+      trashItems.forEach(trashType => {
+        const trashDiv = document.querySelector(`[data-type="${trashType}"]`);
+        trashDiv.style.top = '-50px';
+        trashDiv.style.left = `${getRandomPosition(trashDiv)}px`;
+      });
+
+      trashCanPosition = gameArea.offsetWidth / 2;
+      trashCan.style.left = `${trashCanPosition}px`;
+
+      updateTrashItems();
+    });
+
+    updateTrashItems();
+     function openInfoModal(trashType) {
+      const info = trashInfo[trashType];
+      infoHeader.textContent = info.title;
+      infoText.textContent = info.content;
+      infoModal.style.display = 'flex';
+    }
+  </script>
+</body>
+</html>
