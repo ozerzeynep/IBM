@@ -14,13 +14,15 @@
             align-items: center;
             justify-content: center;
             min-height: 100vh;
-            background-color: #f8f8f8;
+            background: linear-gradient(to right, #cff194 40%, #f9fab2 60%);
         }
         header {
-            background-color: #1da1f2;
+            background-color: #75c36f;
             color: white;
             text-align: center;
             padding: 1rem;
+            margin-bottom: 5px;
+            border-radius: 20px;
         }
         #chat-container {
             width: 100%;
@@ -37,9 +39,9 @@
         }
         .bot-message {
             text-align: left;
-            color: #333;
+            color: #419b3a;
             padding-left: 15px;
-            border-left: 5px solid #1da1f2;
+            border-left: 5px solid #54a44e;
         }
         .user-message {
             text-align: right;
@@ -57,6 +59,13 @@
         }
         #generate-image-button {
             margin-top: 10px;
+            padding: 10px 5px;
+            border-radius: 5rem;
+            cursor: pointer;
+            background-color: transparent;
+            font-size: 16px;
+            color: #54a44e;
+            border-color: #419b3a;
         }
     </style>
 </head>
@@ -67,13 +76,13 @@
     <div id="chat-container">
         <div id="chat"></div>
     </div>
-    <button id="generate-image-button">Resim Oluştur</button>
+    <button id="generate-image-button">Create Image</button>
     <script>
         const chatContainer = document.getElementById('chat');
         const generateImageButton = document.getElementById('generate-image-button');
 
         const botResponses = [
-            "Merhaba! Resim oluşturmak için butona basabilirsiniz.",
+            "Hello! You can press the button to create an image. ",
             "Resminiz oluşturuluyor...",
             "İşte resminiz:"
         ];
