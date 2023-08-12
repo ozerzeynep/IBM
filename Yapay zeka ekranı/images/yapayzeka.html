@@ -45,9 +45,9 @@
         }
         .user-message {
             text-align: right;
-            color: #1da1f2;
+            color: #419b3a;
             padding-right: 15px;
-            border-right: 5px solid #1da1f2;
+            border-right: 5px solid #54a44e;
         }
         .image-message {
             text-align: center;
@@ -83,8 +83,8 @@
 
         const botResponses = [
             "Hello! You can press the button to create an image. ",
-            "Resminiz oluşturuluyor...",
-            "İşte resminiz:"
+            "Image Creation in Progress...",
+            "Here is your picture:"
         ];
 
         let availableImages = [
@@ -215,7 +215,7 @@
             imageDiv.className = 'message image-message';
             const imgElement = document.createElement('img');
             imgElement.src = imageSrc;
-            imgElement.alt = "Seçilen Resim";
+            imgElement.alt = "Selected Image";
             imageDiv.appendChild(imgElement);
             chatContainer.appendChild(imageDiv);
             scrollToBottom();
@@ -235,7 +235,7 @@
         }
 
         generateImageButton.addEventListener('click', () => {
-            userMessage('Lütfen bekleyiniz.');
+            userMessage('Please Wait.');
             botResponse(botResponses[1]);
             scrollToBottom();
             setTimeout(() => {
