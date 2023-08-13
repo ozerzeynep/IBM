@@ -132,3 +132,31 @@ img{
     line-height: 30px;
     font-weight: 400;
 }
+.wrapper{
+    margin-top: 100px;
+    position: relative;
+    width: 850px;
+    height: 550px;
+    background: transparent;
+    border: 2px solid #419b3a;
+    margin-bottom: 400px;
+    overflow: hidden;
+    box-shadow: 0 0 55px #419b3a;
+}
+.bg-animate{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 850px;
+    height: 600px;
+    background: linear-gradient(35deg, #63ce5b, #a6e7a1);
+    border-bottom: 3px solid #419b3a;
+    transform: rotate(10deg) skewY(40deg);
+    transform-origin: bottom right;
+}
+.wrapper h4{
+    margin-top: 205px;
+    font-size: 20px;
+    color: #32962b;
+    margin-left: 10px;
+}
