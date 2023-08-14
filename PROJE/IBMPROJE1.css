@@ -278,6 +278,14 @@ footer img{
     border-radius: 15px;
     cursor: pointer;
 }
+.news-item h3{
+    font-size: 25px;
+    color: #3e6e3d;
+    font-style: italic;
+}
+.news-item p{
+    font-size: 17px;
+}
 .news-item img {
     max-width: 100%;
     height: auto;
@@ -290,6 +298,11 @@ footer img{
     font-weight: bold;
     color: #fff;
     margin-top: 10px;
+}
+.read-more{
+    font-size: 20px;
+    color: #3e6e3d;
+   
 }
   
 
