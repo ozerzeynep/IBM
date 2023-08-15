@@ -27,22 +27,38 @@
       border-radius: 10px;
       text-align: center;
     }
+    
+  .game-area {
+    background-image: url('origbig.png'); 
+    background-size: cover;
+    background-position: center;
+  }
+
+ 
+</style>
+
   </style>
 </head>
 <body>
+ 
+  
   <div class="game-area">
-    <div id="trash-can" class="trash-can"></div>
+    <div id="trash-can" class="trash-can">
+      <img src="geri dönüşüm kutusu.png" alt="Çöp Kutusu">
+    </div>
   </div>
   <div id="score">Skor: 0</div>
   <div class="info-modal" id="infoModal">
     <div class="info-content">
       <h2 id="infoHeader">Atık Hakkında Bilgi</h2>
       <p id="infoText">Bilgi burada görüntülenecek.</p>
-      <button id="closeButton">Kapat</button>
+      
       <button id="restartButton">Yeniden Başlat</button>
     </div>
+    
   </div>
   <script>
+    
    const trashInfo = {//atıkların bilgileri
       paper: {
         title: "Kağıt Atığı",
@@ -158,10 +174,6 @@
       infoModal.style.display = 'flex';
     }
 
-    closeButton.addEventListener('click', () => {
-      infoModal.style.display = 'none';
-      gameOver = false;
-    });
 
     restartButton.addEventListener('click', () => {
       gameOver = false;
@@ -190,5 +202,6 @@
       infoModal.style.display = 'flex';
     }
   </script>
+  
 </body>
 </html>
