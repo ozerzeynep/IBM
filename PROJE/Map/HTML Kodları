@@ -14,9 +14,7 @@
                 <h2>Recycling Stores</h2>
                 <p>Welcome! It's time to take a step towards building a sustainable future. On our website, you will find elegance blended with eco-consciousness. Our collection of recyclable clothes and items allows you to reflect your style and take a planet-friendly step at the same time. Discover this special selection of extraordinary designs and functionality. Enjoy taking a step towards a greener tomorrow by contributing to waste reduction while each product is produced with an innovative approach.</p>
             </div>
-            <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d385396.3210880756!2d28.68252841066151!3d41.00537021148323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1ccfe98bc01b0d0!2zxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1691928711813!5m2!1str!2str" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+           
             
         </div>
     </section>
