@@ -20,5 +20,181 @@
             
         </div>
     </section>
-</body>
-</html>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYjW_mEJ4E87VydnS64VzVM-BIJCf9CzI&callback=initMap" async defer></script>
+    <script>
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: { lat: 40.7128, lng: -74.0060 }, // Başlangıç merkez noktası
+          zoom: 8 // Yaklaştırma seviyesi
+        });
+  
+        var imlecKonumlar = [
+          { lat: 40.7128, lng: -74.0060 }, 
+          { lat: 34.0522, lng: -118.2437 }, 
+          { lat: 41.8781, lng: -87.6298 },
+          { lat: 51.5074, lng: -0.1278 },
+          { lat: 48.8566, lng: 2.3522 }, { lat: 40.7128, lng: -74.0060 }, // New York City, ABD
+          { lat: 34.0522, lng: -118.2437 }, // Los Angeles, ABD
+          { lat: 51.5074, lng: -0.1278 }, // Londra, İngiltere
+          { lat: 48.8566, lng: 2.3522 }, // Paris, Fransa
+          { lat: -33.8688, lng: 151.2093 }, // Sydney, Avustralya
+          { lat: 35.6895, lng: 139.6917 }, // Tokyo, Japonya
+          { lat: 55.7558, lng: 37.6173 }, // Moskova, Rusya
+          { lat: 37.7749, lng: -122.4194 }, // San Francisco, ABD
+          { lat: 19.4326, lng: -99.1332 }, // Meksiko Şehri, Meksika
+          { lat: 40.4168, lng: -3.7038 }, // Madrid,
+          { lat: -22.9068, lng: -43.1729 }, // Rio de Janeiro, Brezilya
+          { lat: -34.397, lng: 150.644 }, // Wollongong, Avustralya
+          { lat: 55.7558, lng: 37.6176 }, // Sankt-Peterburg, Rusya
+          { lat: 45.4215, lng: -75.6972 }, // Ottawa, Kanada
+          { lat: -33.8675, lng: 151.2070 }, // Manly, Avustralya
+          { lat: 19.0760, lng: 72.8777 }, // Mumbai, Hindistan
+          { lat: 55.7558, lng: 37.6175 }, // Ekaterinburg, Rusya
+          { lat: 41.0082, lng: 28.9784 }, // İstanbul
+          { lat: 38.4192, lng: 27.1287 }, // İzmir
+          { lat: 39.9334, lng: 32.8597 }, // Ankara
+          { lat: 37.0017, lng: 35.3213 }, // Adana
+          { lat: 37.0662, lng: 37.3833 }, // Gaziantep
+          { lat: 38.4237, lng: 27.1428 }, // Aydın
+          { lat: 36.7959, lng: 34.5963 }, // Antalya
+          { lat: 37.0662, lng: 37.3833 }, // Mersin
+          { lat: 38.6803, lng: 29.4059 }, // Kütahya
+          { lat: 41.3190, lng: 33.7768 }, // Bolu
+          { lat: 35.6895, lng: 139.6917 }, // Tokyo, Japonya
+          { lat: -33.8688, lng: 151.2093 }, // Sydney, Avustralya
+          { lat: 55.7558, lng: 37.6176 }, // Moskova, Rusya
+          { lat: 40.7128, lng: -74.0060 }, // New York City, ABD
+          { lat: 22.3964, lng: 114.1095 }, // Hong Kong
+          { lat: 51.1657, lng: 10.4515 }, // Almanya
+          { lat: -13.1631, lng: -72.5450 }, // Machu Picchu, Peru
+          { lat: 13.4125, lng: 103.8669 }, // Angkor Wat, Kamboçya
+          { lat: 37.7749, lng: -122.4194 }, // San Francisco, ABD
+          { lat: -23.5505, lng: -46.6333 }, // São Paulo, Brezilya
+          { lat: -6.369028, lng: 34.888822 }, // Darüsselam, Tanzanya
+          { lat: -33.9249, lng: 18.4241 }, // Cape Town, Güney Afrika
+          { lat: 9.0820, lng: 8.6753 }, // Abuja, Nijerya
+          { lat: 15.3694, lng: 44.1910 }, // Sanaa, Yemen
+          { lat: 12.6392, lng: -8.0029 }, // Bamako, Mali
+          { lat: -1.2921, lng: 36.8219 }, // Nairobi, Kenya
+          { lat: 25.276987, lng: 51.520007 }, // Doha, Katar
+          { lat: 31.6304, lng: -8.0081 }, // Marrakeş, Fas
+          { lat: 30.0444, lng: 31.2357 }, // Kahire, Mısır
+          { lat: 14.6928, lng: -17.4467 }, // Dakar, Senegal
+          { lat: 35.6895, lng: 139.6917 }, // Tokyo, Japonya
+          { lat: 22.3964, lng: 114.1095 }, // Hong Kong
+          { lat: 13.7563, lng: 100.5018 }, // Bangkok, Tayland
+          { lat: 37.5665, lng: 126.9780 }, // Seul, Güney Kore
+          { lat: 30.0444, lng: 31.2357 }, // Kahire, Mısır
+          { lat: 19.0759, lng: 72.8773 }, // Mumbai, Hindistan
+          { lat: 23.8103, lng: 90.4125 }, // Dakka, Bangladeş
+          { lat: 39.9042, lng: 116.4074 }, // Pekin, Çin
+          { lat: 1.3521, lng: 103.8198 }, // Singapur
+          { lat: 6.9271, lng: 79.8612 }, // Kolombo, Sri Lanka
+          { lat: 51.5074, lng: -0.1278 }, // Londra, İngiltere
+          { lat: 48.8566, lng: 2.3522 }, // Paris, Fransa
+          { lat: 41.9028, lng: 12.4964 }, // Roma, İtalya
+          { lat: 52.5200, lng: 13.4050 }, // Berlin, Almanya
+          { lat: 55.6761, lng: 12.5683 }, // Kopenhag, Danimarka
+          { lat: 59.3293, lng: 18.0686 }, // Stockholm, İsveç
+          { lat: 53.3498, lng: -6.2603 }, // Dublin, İrlanda
+          { lat: 59.3293, lng: 18.0686 }, // Stockholm, İsveç
+          { lat: 48.2082, lng: 16.3738 }, // Viyana, Avusturya
+          { lat: 50.8503, lng: 4.3517 }, // Brüksel, Belçika
+          { lat: 42.6977, lng: 23.3219 }, // Sofya, Bulgaristan
+          { lat: 42.6629, lng: 21.1655 }, // Priştine, Kosova
+          { lat: 42.4304, lng: 19.2594 }, // Podgorica, Karadağ
+          { lat: 41.3275, lng: 19.8187 }, // Tiran, Arnavutluk
+          { lat: 42.0085, lng: 21.3925 }, // Üsküp, Kuzey Makedonya
+          { lat: 43.8563, lng: 18.4131 }, // Saraybosna, Bosna-Hersek
+          { lat: 45.8150, lng: 15.9819 }, // Zagreb, Hırvatistan
+          { lat: 44.4268, lng: 26.1025 }, // Bükreş, Romanya
+          { lat: 44.7866, lng: 20.4489 }, // Belgrad, Sırbistan
+          { lat: 42.4347, lng: 19.2669 }, // Cetinje, Karadağ
+          { lat: 42.6487, lng: 21.1660 }, // Gjilan, Kosova
+          { lat: 42.5743, lng: 21.1087 }, // Prizren, Kosova
+          { lat: 42.6620, lng: 21.1636 }, // Gjakova, Kosova
+          { lat: 41.9775, lng: 21.4267 }, // Tetova, Kuzey Makedonya
+          { lat: 42.0247, lng: 21.7141 }, // Kumanovo, Kuzey Makedonya
+          { lat: 42.8925, lng: 20.8644 }, // Peć, Kosova
+          { lat: 41.7092, lng: 44.7926 }, // Tiflis, Gürcistan
+          { lat: 41.3165, lng: 19.8167 }, // Dıraç, Arnavutluk
+          { lat: 42.6580, lng: 21.1604 }, // Ferizaj, Kosova
+          { lat: 42.8840, lng: 20.8663 }, // Prizren, Kosova
+          { lat: 34.0522, lng: -118.2437 }, // Los Angeles, California
+          { lat: 41.8781, lng: -87.6298 }, // Chicago, Illinois
+          { lat: 29.7604, lng: -95.3698 }, // Houston, Texas
+          { lat: 33.4484, lng: -112.0740 }, // Phoenix, Arizona
+          { lat: 39.2904, lng: -76.6122 }, // Baltimore, Maryland
+          { lat: 42.3601, lng: -71.0589 }, // Boston, Massachusetts
+          { lat: 37.7749, lng: -122.4194 }, // San Francisco, California
+          { lat: 32.7767, lng: -96.7970 }, // Dallas, Texas
+          { lat: 38.9072, lng: -77.0369 }, // Washington, D.C.
+          { lat: 47.6062, lng: -122.3321 }, // Seattle, Washington
+          { lat: 39.7392, lng: -104.9903 }, // Denver, Colorado
+          { lat: 25.7617, lng: -80.1918 }, // Miami, Florida
+          { lat: 44.9778, lng: -93.2650 }, // Minneapolis, Minnesota
+          { lat: 33.7489, lng: -84.3881 }, // Atlanta, Georgia
+          { lat: 38.2527, lng: -85.7585 }, // Louisville, Kentucky
+          { lat: 35.1495, lng: -90.0490 }, // Memphis, Tennessee
+          { lat: 36.7783, lng: -119.4179 }, // Fresno, California
+          { lat: 42.6526, lng: -73.7562 }, // Albany, New York
+          { lat: 39.9526, lng: -75.1652 }, // Philadelphia, Pennsylvania
+          { lat: 36.7372, lng: -119.7871 }, // Clovis, California
+          { lat: 59.9343, lng: 30.3351 }, // St. Petersburg
+          { lat: 55.0084, lng: 82.9357 }, // Novosibirsk
+          { lat: 56.8389, lng: 60.6057 }, // Yekaterinburg
+          { lat: 45.0355, lng: 38.9756 }, // Krasnodar
+          { lat: 43.5992, lng: 39.7257 }, // Sochi
+          { lat: 53.9045, lng: 27.5615 }, // Minsk, Belarus (örnek olarak)
+          { lat: 55.0302, lng: 82.9204 }, // Omsk
+          { lat: 54.7104, lng: 20.4522 }, // Kaliningrad
+          { lat: 56.2927, lng: 43.8283 }, // Nizhny Novgorod
+          { lat: 43.1065, lng: 131.8735 }, // Vladivostok
+          { lat: 51.1694, lng: 71.4491 }, // Astana, Kazakhstan (örnek olarak)
+          { lat: 54.3150, lng: 48.4022 }, // Samara
+          { lat: 55.7558, lng: 49.1203 }, // Kazan
+          { lat: 51.7762, lng: 55.1124 }, // Chelyabinsk
+          { lat: 56.8519, lng: 60.6122 }, // Yekaterinburg
+          { lat: 56.0000, lng: 92.7915 }, // Krasnoyarsk
+          { lat: 57.1537, lng: 65.5423 }, // Tyumen
+          { lat: 43.0250, lng: 131.8856 }, // Vladivostok
+          { lat: 54.7388, lng: 55.9721 }, // Ufa
+          { lat: 45.4215, lng: -75.6972 }, // Ottawa, Ontario
+          { lat: 43.6532, lng: -79.3832 }, // Toronto, Ontario
+          { lat: 49.2827, lng: -123.1207 }, // Vancouver, British Columbia
+          { lat: 53.5461, lng: -113.4938 }, // Edmonton, Alberta
+          { lat: 51.0486, lng: -114.0708 }, // Calgary, Alberta
+          { lat: 45.5017, lng: -73.5673 }, // Montreal, Quebec
+          { lat: 44.6488, lng: -63.5752 }, // Halifax, Nova Scotia
+          { lat: 48.4284, lng: -123.3656 }, // Victoria, British Columbia
+          { lat: 49.8951, lng: -97.1384 }, // Winnipeg, Manitoba
+          { lat: 53.9171, lng: -122.7496 }, // Prince George, British Columbia
+          { lat: 53.7267, lng: -127.6476 }, // Smithers, British Columbia
+          { lat: 48.4333, lng: -123.3667 }, // Victoria, British Columbia
+          { lat: 45.9429, lng: -66.6587 }, // Fredericton, New Brunswick
+          { lat: 46.8139, lng: -71.2080 }, // Quebec City, Quebec
+          { lat: 42.9865, lng: -81.2466 }, // London, Ontario
+   
+  
+        ];
+  
+        imlecKonumlar.forEach(function(konum) {
+          new google.maps.Marker({
+            position: konum,
+            map: map,
+            title: 'İmleç'
+          });
+        });
+      }
+    </script>
+    <style>
+      #map {
+        height: 500px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+  </body>
+  </html>
