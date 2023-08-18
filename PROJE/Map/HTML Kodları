@@ -143,12 +143,12 @@
           { lat: 56.8389, lng: 60.6057 }, // Yekaterinburg
           { lat: 45.0355, lng: 38.9756 }, // Krasnodar
           { lat: 43.5992, lng: 39.7257 }, // Sochi
-          { lat: 53.9045, lng: 27.5615 }, // Minsk, Belarus (örnek olarak)
+          { lat: 53.9045, lng: 27.5615 }, // Minsk, Belarus 
           { lat: 55.0302, lng: 82.9204 }, // Omsk
           { lat: 54.7104, lng: 20.4522 }, // Kaliningrad
           { lat: 56.2927, lng: 43.8283 }, // Nizhny Novgorod
           { lat: 43.1065, lng: 131.8735 }, // Vladivostok
-          { lat: 51.1694, lng: 71.4491 }, // Astana, Kazakhstan (örnek olarak)
+          { lat: 51.1694, lng: 71.4491 }, // Astana, Kazakhstan 
           { lat: 54.3150, lng: 48.4022 }, // Samara
           { lat: 55.7558, lng: 49.1203 }, // Kazan
           { lat: 51.7762, lng: 55.1124 }, // Chelyabinsk
