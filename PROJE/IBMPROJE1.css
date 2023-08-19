@@ -274,17 +274,18 @@ footer img{
     padding: 50px;
     border: 1px solid #ccc;
     text-align: left;
-    background-color: #fff;
+    background-color: #9beb71;
     border-radius: 15px;
     cursor: pointer;
 }
 .news-item h3{
     font-size: 25px;
-    color: #3e6e3d;
+    color: #fff;
     font-style: italic;
 }
 .news-item p{
     font-size: 17px;
+    color: #fff;
 }
 .news-item img {
     max-width: 100%;
@@ -301,8 +302,7 @@ footer img{
 }
 .read-more{
     font-size: 20px;
-    color: #3e6e3d;
-   
+    color: #fff;
 }
   
 
