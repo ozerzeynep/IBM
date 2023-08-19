@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="oyun.css">
   <style>
+    body{
+      background: linear-gradient(to right, #cff194 40%, #f9fab2 60%);
+    }
     .trash-can {
       position: absolute;
       bottom: 0;
@@ -50,10 +53,10 @@
   <div id="score">Skor: 0</div>
   <div class="info-modal" id="infoModal">
     <div class="info-content">
-      <h2 id="infoHeader">Atık Hakkında Bilgi</h2>
+      <h2 id="infoHeader">Atık hakkında bilgi.</h2>
       <p id="infoText">Bilgi burada görüntülenecek.</p>
       
-      <button id="restartButton">Yeniden Başlat</button>
+      <button id="restartButton">Restart</button>
     </div>
     
   </div>
@@ -61,20 +64,20 @@
     
    const trashInfo = {//atıkların bilgileri
       paper: {
-        title: "Kağıt Atığı",
-        content: "Kağıt atığı doğada kolayca çözünebilir.",
+        title: "Paper Waste",
+        content: "Paper waste is easily biodegradable.",
       },
       plastic: {
-        title: "Plastik Atığı",
-        content: "Plastik atığı doğada parçalanması çok uzun sürer.",
+        title: "Plastic Waste",
+        content: "Plastic waste takes a very long time to break down in nature.",
       },
       glass: {
-        title: "Cam Atığı",
-        content: "Cam atığı yeniden geri dönüştürülebilir.",
+        title: "Glass Waste",
+        content: "Glass waste can be recycled again.",
       },
       metal: {
-        title: "Metal Atığı",
-        content: "Metal atığı tekrar kullanılabilecek şekilde geri dönüştürülebilir.",
+        title: "Metal Waste",
+        content: "Metal waste can be recycled so that it can be used again.",
       },
     };
     const gameArea = document.querySelector('.game-area');
