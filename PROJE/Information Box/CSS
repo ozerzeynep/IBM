@@ -182,7 +182,7 @@ img{
     padding: 10px;
     border: 1px solid #ccc;
     text-align: left;
-    background-color: #fff;
+    background-color: #a6e7a1;
     border-radius: 15px;
     cursor: pointer;
 }
