@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="sales.css">
+    
+</head>
+<body>
+   
+    
+
+    <div id="page" class="site">
+        <header>
+           <div class="header-naw"></div>
+           <div class="container"></div>
+           <div class="wrapper flexitem">
+            <a href="#" class="trigger desktop-hide"></a>
+            <div class="left flexitem">
+                <div class="logo"><a href="#" class="logo">Eko<span>Loop</span></a></div>
+                
+            </div>
+            
+            <section class="home" id="home_two">
+                <div class="images">
+                    <img src="bagcisan-ciftci1-min.png" alt="" id="ciftci">
+                    <h5>Step into a sustainable future and add color to<br> your daily life with our eco-friendly  Don't <br>compromise your style while protecting nature.<br> Enjoy green shopping today!  Each of your choices <br> is an important step towards a cleaner environment<br> and a  greener world.  With us, enjoy the privilege <br> of moving forward with hope for the future.</h5>
+                </div>
+                
+            </section>
+           
+        </header>
+        
+        <section class="doga">
+            <div class="box-container">
+                <div class="box">
+                    <div class="box-head">
+                        <img src="gubre-fiyatlari-ne-kadar-oldu-4.webp" alt="" id="first">
+                        <h4>20 Tons Of Fertilizer </h4>
+                        <p>Eco-friendly fertilizers that increase soil fertility are here!We offer the best options for environmentally friendly agriculture!</p>
+                        <button id="satıs_butonu"><a href="#">Buy Now</a></button>
+                    </div>
+                    
+                </div>
+                <div class="box">
+                    <div class="box-head">
+                        <img src="plastik_satısı.jpg" alt="" id="first" class="plastik">
+                        <h4>2 Tons Plastic</h4>
+                        <p>We support environmental awareness by offering you products made from recycled plastics for a sustainable future.</p>
+                        <button id="satıs_butonu"><a href="#">Buy Now</a></button>
+                    </div>
+                    
+                </div>
+                <div class="box">
+                    <div class="box-head">
+                        <img src="evverveve.jpg" alt="" id="first">
+                        <h4>Five Pieces</h4>
+                        <p>Recycled bag made of denim fabric, available in different colors.</p>
+                        <button id="satıs_butonu"><a href="#">Buy Now</a></button>
+                    </div>
+                    
+                </div>
+                <div class="box">
+                    <div class="box-head">
+                        <img src="kagit-atik-3-b.jpg" alt="" id="first">
+                        <h4>Weighs Five Kilos </h4>
+                        <p>There are newspaper wastes and various paper wastes, which are not very worn out.</p>
+                        <button id="satıs_butonu"><a href="#">Buy Now</a></button>
+                    </div>
+                    
+                </div>
+                <div class="box">
+                    <div class="box-head">
+                        <img src="cam-atik.png" alt="" id="first">
+                        <h4>Total Ten Pieces </h4>
+                        <p>They are thin glass and can be easily recycled.</p>
+                        <button id="satıs_butonu"><a href="#">Buy Now</a></button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-head">
+                        <img src="multi-color-fabric-texture-sampless-1024x681.jpg" alt="" id="first">
+                        <h4>Scraps Of Leftover Fabric Weighing Two Kilos</h4>
+                        <p>You can create eye-catching rugs with colorful scraps of leftover fabric.</p>
+                        <button id="satıs_butonu"><a href="#">Buy Now</a></button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-head">
+                        <img src="gıda.jpg" alt="" id="first">
+                        <h4>5 Tons Of Organic Waste</h4>
+                        <p>Thanks to this organic waste, your plants will taste better and grow faster.</p>
+                        <button id="satıs_butonu"><a href="#">Buy Now</a></button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-head">
+                        <img src="KITASP-1-731x400-1.jpg" alt="" id="first">
+                        <h4>Test Book Waste</h4>
+                        <p>You can recycle the test books as paper waste or create notebooks from the blank pages.</p>
+                        <button id="satıs_butonu"><a href="#">Buy Now</a></button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-head">
+                        <img src="pet-siseler,6.jpg" alt="" id="first">
+                        <h4>Weighs 2.5 Tons</h4>
+                        <p>Easily recycle plastic bottles to make new bottles, making good use of your waste and helping the environment.</p>
+                        <button id="satıs_butonu"><a href="#">Buy Now</a></button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-head">
+                        <img src="geridönüşüm_kıyafetleri.jpg" alt="" id="first">
+                        <h4>Making Clothes From Waste Products</h4>
+                        <p>Clothing is made to order from any product you wish.</p>
+                        <button id="satıs_butonu"><a href="#">Buy Now</a></button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-head">
+                        <img src="ambalaj-atiklari.jpg" alt="" id="first">
+                        <h4>Weighs 4.5 Tons</h4>
+                        <p>Packaging waste is available.</p>
+                        <button id="satıs_butonu"><a href="#">Buy Now</a></button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-head">
+                        <img src="gübree.jpg" alt="" id="first">
+                        <h4>1.5 Ton Fertilizer</h4>
+                        <p>Open the doors to a productive harvest with our high quality fertilizers that combine the power of agriculture with the health of plants. </p>
+                        <button id="satıs_butonu"><a href="#">Buy Now</a></button>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <footer>
+            <div class="footer">
+                <h2>Be Part of the Change: It's Time to Give New Life to Forgotten <br> Treasure Invest in Your Future and Earn Additional Income!</h2>
+                <p>Recycle Your Stuff: Create Your Own Recycling Market and Contribute <br>to the Environment and Have a Profitable Experience!</p>
+                <ul class="social">
+                    <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
+                    <li><a href="https://instagram.com/ekoloop23?igshid=MmU2YjMzNjRlOQ==" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100095019383090" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+
+    
+    <script src="sales.js"></script>
+</body>
+</html>
