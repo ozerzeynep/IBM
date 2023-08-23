@@ -1,0 +1,230 @@
+*,::before,::after{
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #C3EDC0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    list-style: none;
+}
+.logo{
+    font-size: 2.2rem;
+    font-weight: 100;
+    color: #3e6e3d;
+    display: block;
+    margin-top: -20px;
+}
+.logo span{
+    color: #88c487;
+    display: block;
+}
+strong{
+    font-weight: 400;
+}
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+input::placeholder{
+    font: inherit;
+}
+h1,h2,h3,h4{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h1{
+    font-size: calc(1.3em + 1vw);
+    font-weight: 400;
+    line-height: 1;
+}
+h2{
+    font-size: 2.5em;
+}
+h3{
+    font-size: 1.2em;
+    font-weight: 400;
+}
+h4{
+    font-size: 1em;
+    font-weight: 400;
+}
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 0.938em;
+}
+.column{
+    margin-left: -0.938em;
+    margin-right: -0.938em;
+}
+.column .row{
+    padding: 0 0.938em;
+}
+.flexwrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+.flexcenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flexitem{
+    display: flex;
+    align-items: center;
+}
+.flexcol{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.trigger{
+    font-size: 1.5em;
+    display: flex;
+    padding: 0.25em;
+    margin-right: 0.5em;
+}
+.logo a{
+    font-size: 1.80em;
+    position: relative;
+    font-weight: bold;
+    display: flex;
+    padding-left: 0.75em;
+    margin-right: 2em;
+}
+.circle{
+    position: absolute;
+    top: 9px;
+    left: 10;
+    width: 38px;
+    height: 38px;
+    border-radius: 30px;
+    z-index: -1;
+    background-color: #5daa58;
+}
+.home{
+    max-width: 1300px;
+    width: 100%;
+    margin: auto;
+    min-height: 640px;
+    display: flex;
+    align-items: center;
+    background-color: #80cf7f;
+    margin-top: 19px;
+    margin-right: 70px;
+    position: relative;
+}
+.images{
+    display: inline-block;
+    position: relative;
+}
+.images #ciftci{
+    width: 400px;
+    margin-left: 550px;
+}
+.images h5{
+    position: absolute;
+    margin-top: -330px;
+    margin-left: 15px;
+    color: #fff;
+    font-size: 20px;
+}
+.doga .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    position: relative;
+    margin-top: 200px;
+    margin-bottom: 250px;
+}
+.doga .box-container .box{
+    padding: 3rem;
+    background-color: #fff;
+    border-radius: 3rem;
+    min-height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0 20px;
+    transition: 1s;
+}
+.doga .box-container .box img{
+    width: 100%;
+    object-fit: cover;
+}
+#first{
+    margin-top: -10px;
+    border-radius: 11px;
+}
+.box-head h4{
+    color: #5daa58;
+    font-size: 25px;
+    text-align: center;
+}
+.box-head p{
+    color: #5daa58;
+    font-size: 17px;
+}
+.box-head .plastik{
+    max-width: 300px;
+    margin-left: 25px;
+}
+#satıs_butonu{
+    font-size: 20px;
+    padding: 10px 5px;
+    color: #5daa58;
+    border-radius: 10px;
+    margin-left: 120px;
+    border-color: #5daa58;
+    background-color: #fff;
+    transition: 1s;
+}
+#satıs_butonu:hover{
+    color: #fff;
+    background-color: #5daa58;
+    cursor: pointer;
+}
+.footer{
+    width: 100%;
+    height: 400px;
+    background-color: #95de8f;
+    border-radius: 30px;
+    border-top-left-radius: 200px;
+}
+.social{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+    padding-top: 80px;
+}
+.social li{
+    margin: 0 10px;
+}
+.social a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 31px;
+}
+.social a:hover{
+    color: #679565;
+}
+.footer h2{
+    font-size: 35px;
+    color: #fff;
+    text-align: center;
+    padding-top: 35px;
+}
+.footer p{
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    padding-top: 15px;
+}
