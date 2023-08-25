@@ -24,19 +24,19 @@ body{
     font-size: 25px;
     color: #669363;
     float: right;
-    margin-top: 110px;
+    margin-top: 170px;
     margin-right: 140px;
 }
 .container p{
     font-size: 20px;
     color: #669363;
     float: right;
-    margin-top: -230px;
+    margin-top: -190px;
     margin-right: 70px;
 }
 .container button{
     float: right;
-    margin-right: 110px;
+    margin-right: 120px;
     padding: 5px 55px;
     cursor: pointer;
     border: 2px solid #669363;
@@ -44,7 +44,7 @@ body{
     color: #669363;
     border-radius: 20px;
     transition: 1s;
-    margin-top: -50px;
+    margin-top: -60px;
 }
 .container button:hover{
     background-color: #669363;
