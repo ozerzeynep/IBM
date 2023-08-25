@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Now</title>
+    <link rel="stylesheet" href="buy_now_six.css">
+</head>
+<body>
+    <div class="container">
+        <img src="multi-color-fabric-texture-sampless-1024x681.jpg" alt="">
+        <h3>Scraps Of Leftover <br> Fabric Weighing  Two Kilos</h3>
+        <p>You can create eye-catching <br> rugs with colorful <br> scraps of leftover fabric.</p>
+        <button>Make Payment</button>
+    </div>
+</body>
+</html>
