@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Now</title>
+    <link rel="stylesheet" href="buy_now_three.css">
+    
+</head>
+<body>
+    <div class="container">
+        <img src="evverveve.jpg" alt="">
+        <h3>Five Pieces</h3>
+        <p>Recycled bag made of <br> denim fabric, available <br> in different colors.</p>
+        <button>Make Payment</button>
+    </div>
+</body>
+</html>
