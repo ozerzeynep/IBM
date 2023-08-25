@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Now</title>
+    <link rel="stylesheet" href="buy_now_five.css">
+</head>
+<body>
+    <div class="container">
+        <img src="cam-atik.png" alt="">
+        <h3>Total Ten Pieces </h3>
+        <p>They are thin glass <br> and can be easily recycled.</p>
+        <button>Make Payment</button>
+    </div>
+</body>
+</html>
