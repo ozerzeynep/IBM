@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Now</title>
+    <link rel="stylesheet" href="buy_now_eight.css">
+</head>
+<body>
+    <div class="container">
+        <img src="KITASP-1-731x400-1.jpg" alt="">
+        <h3>Test Book Waste</h3>
+        <p>You can recycle the <br> test books as paper waste <br> or create notebooks <br> from the blank pages.</p>
+        <button>Make Payment</button>
+    </div>
+</body>
+</html>
