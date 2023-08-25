@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Now</title>
+    <link rel="stylesheet" href="buy_now.css">
+</head>
+<body>
+    <div class="container">
+        <img src="gubre-fiyatlari-ne-kadar-oldu-4.webp" alt="">
+        <h3>20 Tons Of Fertilizer</h3>
+        <p>Eco-friendly fertilizers<br> that increase soil<br> fertility are here! <br>We offer the best options <br> for environmentally <br> friendly agriculture!</p>
+        <button>Make Payment</button>
+    </div>
+</body>
+</html>
