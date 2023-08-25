@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Now</title>
+    <link rel="stylesheet" href="buy_now_twelve.css">
+</head>
+<body>
+    <div class="container">
+        <img src="gübree.jpg" alt="">
+        <h3>1.5 Ton Fertilizer</h3>
+        <p>Open the doors to a <br> productive harvest with <br> our high quality fertilizers <br> that combine the power <br> of agriculture with <br> the health of plants.</p>
+        <button>Make Payment</button>
+    </div>
+</body>
+</html>
