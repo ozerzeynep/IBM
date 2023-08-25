@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Now</title>
+    <link rel="stylesheet" href="buy_now_ten.css">
+</head>
+<body>
+    <div class="container">
+        <img src="geridönüşüm_kıyafetleri.jpg" alt="">
+        <h3>Making Clothes <br> From Waste Products</h3>
+        <p>Clothing is made to <br> order from any product you wish.</p>
+        <button>Make Payment</button>
+    </div>
+</body>
+</html>
