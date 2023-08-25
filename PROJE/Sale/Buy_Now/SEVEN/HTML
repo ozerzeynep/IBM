@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Now</title>
+    <link rel="stylesheet" href="buy_now_seven.css">
+</head>
+<body>
+    <div class="container">
+        <img src="gıda.jpg" alt="">
+        <h3>5 Tons Of Organic Waste</h3>
+        <p>Thanks to this organic waste,<br> your plants will <br> taste better and grow faster.</p>
+        <button>Make Payment</button>
+    </div>
+</body>
+</html>
