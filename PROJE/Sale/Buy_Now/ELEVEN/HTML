@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Now</title>
+    <link rel="stylesheet" href="buy_now_eleven.css">
+</head>
+<body>
+    <div class="container">
+        <img src="ambalaj-atiklari.jpg" alt="">
+        <h3>Weighs 4.5 Tons</h3>
+        <p>Packaging waste is available.</p>
+        <button>Make Payment</button>
+    </div>
+</body>
+</html>
