@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Now</title>
+    <link rel="stylesheet" href="buy_now_nine.css">
+</head>
+<body>
+    <div class="container">
+        <img src="pet-siseler,6.jpg" alt="">
+        <h3>Weighs 2.5 Tons</h3>
+        <p>Easily recycle plastic bottles <br> to make new bottles, <br> making good use of your waste <br> and helping the environment.</p>
+        <button>Make Payment</button>
+    </div>
+</body>
+</html>
