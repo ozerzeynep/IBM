@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Now</title>
+    <link rel="stylesheet" href="buy_now_two.css">
+    
+</head>
+<body>
+    <div class="container">
+        <img src="plastik_satısı.jpg" alt="">
+        <h3>2 Tons Plastic</h3>
+        <p>We support environmental <br> awareness by offering <br> you products made from <br> recycled plastics for <br> a sustainable future.</p>
+        <button>Make Payment</button>
+    </div>
+</body>
+</html>
