@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş Seçeneği Sorma</title>
+    <link rel="stylesheet" href="giris_secenegi_sorma.css">
+</head>
+<body>
+    <div class="main">
+        <button id="one"><a href="kayıt_ekranı.html" target="_blank">Continue For User Login</a></button>
+        <button id="two"><a href="kayıt_ekanı_iki.html" target="_blank">Continue For Seller Login</a></button>
+    </div>
+</body>
+</html>
