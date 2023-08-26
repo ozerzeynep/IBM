@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kullanıcı Kayıt ve Giriş</title>
+  <link rel="stylesheet" href="kayıt_ekranı.css">
+  
+</head>
+<body>
+  
+  
+    <h1>Vendor Registration Area</h1>
+    <div id="registerForm">
+        <h2>Register Now</h2>
+        
+        <form>
+        <label for="firstName">Name:</label>
+        <input type="text" id="firstName" name="firstName" required><br>
+        <label for="lastName">Surname:</label>
+        <input type="text" id="lastName" name="lastName" required><br>
+        <label for="phone">Telephone Number:</label>
+        <input type="tel" id="phone" name="phone" required><br>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="username">User Name:</label>
+        <input type="text" id="username" name="username" required><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+        <button type="button" id="registerButton">Register Now</button>
+        </form>
+    </div>
+
+  
+  
+
+  <div id="loginForm" style="display: none;">
+    <h2>Sign In</h2>
+    <form>
+      <label for="loginUsername">Username:</label>
+      <input type="text" id="loginUsername" name="loginUsername" required><br>
+      <label for="loginPassword">Password:</label>
+      <input type="password" id="loginPassword" name="loginPassword" required><br>
+      <button type="button" id="loginButton">Sign In</button>
+    </form>
+  </div>
+
+  <div id="userInfo" style="display: none;">
+    <h2>Hoş Geldiniz</h2>
+    <p>Ad: <span id="loggedInFirstName"></span></p>
+    <p>Soyad: <span id="loggedInLastName"></span></p>
+    <p>Telefon: <span id="loggedInPhone"></span></p>
+    <p>E-posta: <span id="loggedInEmail"></span></p>
+    <p>Kullanıcı Adı: <span id="loggedInUsername"></span></p>
+    <button type="button" id="logoutButton">Çıkış Yap</button>
+  </div>
+
+  <script>
+    const registerForm = document.getElementById("registerForm");
+    const loginForm = document.getElementById("loginForm");
+    const userInfo = document.getElementById("userInfo");
+    const loggedInFirstName = document.getElementById("loggedInFirstName");
+    const loggedInLastName = document.getElementById("loggedInLastName");
+    const loggedInPhone = document.getElementById("loggedInPhone");
+    const loggedInEmail = document.getElementById("loggedInEmail");
+    const loggedInUsername = document.getElementById("loggedInUsername");
+
+    const registerButton = document.getElementById("registerButton");
+    const loginButton = document.getElementById("loginButton");
+    const logoutButton = document.getElementById("logoutButton");
+
+    const users = []; // Kullanıcı bilgilerini depolama yeri
+
+    registerButton.addEventListener("click", () => {
+      const firstName = document.getElementById("firstName").value;
+      const lastName = document.getElementById("lastName").value;
+      const phone = document.getElementById("phone").value;
+      const email = document.getElementById("email").value;
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+        // Kullanıcı adının kontrolü
+        if (users.some(user => user.username === username)) {
+        alert("Bu kullanıcı adı zaten kullanılıyor. Lütfen farklı bir kullanıcı adı seçin.");
+        return;
+      }
+
+      // Telefon numarasının kontrolü 
+      if (users.some(user => user.phone === phone)) {
+        alert("Bu telefon numarası zaten kullanılıyor. Lütfen farklı bir telefon numarası seçin.");
+        return;
+      }
+
+      // malin aynı olmaması
+      if (users.some(user => user.email === email)) {
+        alert("Bu e-posta adresi zaten kullanılıyor. Lütfen farklı bir e-posta adresi seçin.");
+        return;
+      }
+
+      // Yeni kullanıcıyı kayıt
+      users.push({ firstName, lastName, phone, email, username, password });
+
+      // Kayıt formundan çık giriş formuna yönlendir
+      registerForm.style.display = "none";
+      loginForm.style.display = "block";
+    });
+
+    loginButton.addEventListener("click", () => {
+  const loginUsername = document.getElementById("loginUsername").value;
+  const loginPassword = document.getElementById("loginPassword").value;
+
+  // Kullanıcı girişi kontrolü
+  const user = users.find(user => user.username === loginUsername && user.password === loginPassword);
+
+  if (user) {
+   
+    loggedInFirstName.textContent = user.firstName;
+    loggedInLastName.textContent = user.lastName;
+    loggedInPhone.textContent = user.phone;
+    loggedInEmail.textContent = user.email;
+    loggedInUsername.textContent = user.username;
+    loginForm.style.display = "none";
+    userInfo.style.display = "block";
+    loggedInUser = user; // Giriş yapan kullanıcının bilgilerini kaydet
+    window.location.href = "içerik.html"; // giriş yapınca hangi sayfaya yönlendireceksek orayı yazıcaz
+  } else {
+    alert("Hatalı kullanıcı adı veya şifre!");
+  }
+});
+
+    logoutButton.addEventListener("click", () => {
+      // Çıkış yap, kullanıcı bilgilerini gizle, giriş formunu göster
+      userInfo.style.display = "none";
+      loginForm.style.display = "block";
+      window.location.href = "anasayfa.html"; // buraya bizim anasayfa eklenecek çıkış yaptıktan sonra yönlencek
+    });
+  </script>
+</body>
+</html>
