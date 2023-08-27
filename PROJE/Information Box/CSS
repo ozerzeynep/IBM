@@ -203,3 +203,11 @@ img{
     color: #fff;
     margin-top: 10px;
 }
+.video{
+    margin-top: 50px;
+}
+.video video{
+    width: 1080px;
+    margin-bottom: 60px;
+    border-radius: 10px;
+}
