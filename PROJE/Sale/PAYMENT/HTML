@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <div class="row">
+                <div class="col">
+                    <h3 class="title">BILLING ADDRESS</h3>
+                    <div class="inputbox">
+                        <span>Full Name:</span>
+                        <input type="text">
+                    </div>
+                    <div class="inputbox">
+                        <span>Email:</span>
+                        <input type="email">
+                    </div>
+                    <div class="inputbox">
+                        <span>Address:</span>
+                        <input type="text">
+                    </div>
+                    <div class="inputbox">
+                        <span>City:</span>
+                        <input type="text">
+                    </div>
+                    <div class="flex">
+                        <div class="inputbox">
+                            <span>State:</span>
+                            <input type="text">
+                        </div>
+                        <div class="inputbox">
+                            <span>Zip Code:</span>
+                            <input type="text">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col">
+                    <h3 class="title">Payment</h3>
+                    <div class="inputbox">
+                        <span>Cards Accepted:</span>
+                        <img src="kart.png" alt="">
+                    </div>
+                    <div class="inputbox">
+                        <span>Name On Card:</span>
+                        <input type="text">
+                    </div>
+                    <div class="inputbox">
+                        <span>Credit Card Number:</span>
+                        <input type="number">
+                    </div>
+                    <div class="inputbox">
+                        <span>Exp Month:</span>
+                        <input type="text">
+                    </div>
+                    <div class="flex">
+                        <div class="inputbox">
+                            <span>Exp Year:</span>
+                            <input type="number">
+                        </div>
+                        <div class="inputbox">
+                            <span>CVV:</span>
+                            <input type="text">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <input type="submit" value="Proceed To Checkout" class="submit-btn">
+        </form>
+    </div>
+</body>
+</html>
