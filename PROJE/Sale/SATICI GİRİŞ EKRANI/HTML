@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="satıcı_ekranı.css">
+</head>
+<body>
+    <input type="checkbox" id="menu-toggle">
+
+    <div class="sidebar">
+        <div class="sidebar-container">
+            <div class="brand">
+                <h2>EkoLoop</h2>
+            </div>
+            <div class="slidebar-awatar">
+                <div class="awatar">
+                    <div>
+                        <img src="woman.png" alt="">
+                    </div>
+                    <div class="avartar-info">
+                        <div class="avartar-text">
+                            <h4>xxxxx xxxx</h4>
+                            <p>XX-XX-XXXX</p>
+                        </div>
+                        <i class="fa-solid fa-angles-down"></i>
+                    </div>
+                </div>
+                <div class="sidebar-menu">
+                    <ul>
+                        <li>
+                            <a href="#"  class="active">
+                                <i class="fa-solid fa-circle-half-stroke"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-gamepad"></i>
+                                <span>Game</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-question"></i>
+                                <span>Help & Support</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                                <span>Logout</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sidebar-card">
+                    <div>
+                        <img src="ekoLoop1.png" alt="logo">
+                        <p>Post images on your blog and improve your level.</p>
+                    </div>
+                    <button class="btn btn-main"><a href="IBMPROJE1.html" target="_blank">Back to Homepage</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="card-container">
+            <h3 class="main-title">Scoreboard</h3>
+            <div class="card-wrapper">
+                <div class="payment-card">
+                    <div class="card-header">
+                        <div class="ammount">
+                            <span class="title">
+                                Level One
+                            </span>
+                            
+                        </div>
+                        <i class="fa-solid fa-gem" id="icon"></i>
+                    </div>
+                    <div class="card-indicator">
+                        <div class="indicator one" style="width: 60%;"></div>
+                    </div>
+                </div>
+
+                <div class="payment-card color">
+                    <div class="card-header">
+                        <div class="ammount">
+                            <span class="title">
+                                Level Two
+                            </span>
+                            
+                        </div>
+                        <i class="fa-solid fa-gem" id="icon"></i>
+                    </div>
+                    <div class="card-indicator">
+                        <div class="indicator two" style="width: 20%;"></div>
+                    </div>
+                </div>
+
+                <div class="payment-card color-two">
+                    <div class="card-header">
+                        <div class="ammount">
+                            <span class="title">
+                                Level Three
+                            </span>
+                            
+                        </div>
+                        <i class="fa-solid fa-gem" id="icon"></i>
+                    </div>
+                    <div class="card-indicator">
+                        <div class="indicator three" style="width: 40%;"></div>
+                    </div>
+                </div>
+
+                <div class="payment-card color-three">
+                    <div class="card-header">
+                        <div class="ammount">
+                            <span class="title">
+                                Level Four
+                            </span>
+                            
+                        </div>
+                        <i class="fa-solid fa-gem" id="icon"></i>
+                    </div>
+                    <div class="card-indicator">
+                        <div class="indicator four" style="width: 70%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="chart-grid">
+            <div id="myfirstchart" style="height: 250px;"></div>
+            <div id="donut-example" style="height: 350px;"></div>
+        </div>
+        <div class="content-two">
+            <div class="content-three">
+                <div class="titlee">
+                    <h2>Change Username(you can change it if you want)</h2>
+                </div>
+
+                <form id="usernameForm">
+                    <label for="newUsername">New Username:</label>
+                    <input type="text" id="newUsername" name="newUsername" required>
+                    <button type="submit" id="change button">Change</button>
+                </form>
+            </div>
+        </div>
+        <div class="card-new">
+            <h3>You can tag us by sharing the levels you have progressed on instagram. We are sure you will enjoy it, come on you start. </h3>
+            <button class="btn btn-main"><a href="https://www.instagram.com/accounts/login/" target="_blank">Login to Instagram</a></button>
+        </div>
+        <img src="sustainability.png" alt="" id="picture-two">
+    </div>
+
+    <div class="sale">
+        <h3>Add Products For Sale</h3>
+        <div id="page">
+            <div class="icon"><i class="fa-solid fa-images"></i></div>
+            <h4 id="page_text">Drag And Drop File</h4>
+            <button id="butonn">Browse File</button>
+            <input type="file" hidden id="fileSelecter">
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    const usernameForm = document.getElementById("usernameForm");
+    const newUsernameInput = document.getElementById("newUsername");
+    const avartarInfo = document.querySelector(".avartar-info h4");
+
+    usernameForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const newUsername = newUsernameInput.value.trim();
+
+        if (newUsername !== "") {
+            avartarInfo.textContent = newUsername;
+            newUsernameInput.value = "";
+        }
+    });
+});
+
+    const page = document.getElementById('page');
+    const page_text = document.getElementById('page_text');
+    const butonn = document.getElementById('butonn');
+    const fileSelecter = document.getElementById('fileSelecter');
+
+
+    
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+    
+    <script 
+    src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
