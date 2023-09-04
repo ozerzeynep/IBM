@@ -132,5 +132,18 @@
       window.location.href = "anasayfa.html"; // buraya bizim anasayfa eklenecek çıkış yaptıktan sonra yönlencek
     });
   </script>
+  <script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "64516859-37aa-4dd3-883a-e5b4139b39bc", 
+    region: "eu-de",
+    serviceInstanceID: "d67d8888-1949-4fca-9f52-e628cf1221ad", 
+    onLoad: function(instance) { instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
 </body>
 </html>
