@@ -52,7 +52,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="C:\Users\kaya1\Downloads\IBM\PROJE\IBMPROJE1.html" onclick="window.close();window.open('C:/Users/kaya1/Downloads/IBM/PROJE/IBMPROJE1.html')">
                                 <i class="fa-solid fa-right-from-bracket"></i>
                                 <span>Logout</span>
                             </a>
